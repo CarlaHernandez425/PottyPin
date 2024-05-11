@@ -1,0 +1,189 @@
+/* Basic Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+#content {
+    flex: 1 0 auto; /* Takes up the available space */
+    padding: 20px; /* Adds some spacing around content */
+}
+#footer {
+    flex-shrink: 0; /* Ensures that footer does not shrink */
+    text-align: center; /* Centers the footer content horizontally */
+    padding: 10px 0; /* Gives some padding above and below the text */
+    background: #f8f9fa; /* Light gray background */
+}
+
+/* Background */
+.bg {
+    background-image: url('../img/PottyPin_SignupBackground.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+/* Cards */
+.card, #login_banner {
+    background-color: white;
+    color: #654321;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    opacity: 1;
+}
+
+#login_banner {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem;
+}
+
+.form-container {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #9dc183;
+    color: white;
+}
+
+/* Table */
+.full-width-table, .legend-text {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    font-size: 16px;
+}
+
+.full-width-table th, .full-width-table td {
+    text-align: center;
+    word-wrap: break-word;
+}
+
+@media (max-width: 768px) {
+    .full-width-table, .legend-text {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .full-width-table, .legend-text {
+        font-size: 12px;
+    }
+}
+
+/* Map */
+#map {
+    height: 40vh;
+}
+
+/* Misc */
+.legend {
+    width: 100%;
+    max-width: 250px;
+    margin: 10px auto;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.legend-icon img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.small-icon {
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+}
+
+.star-rating, .star, .star-half, .star-empty {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1em;
+    line-height: 1em;
+}
+
+/* Color Classes */
+.odd-color, .odd-color + .collapsible-content {
+    background-color: hsl(90, 20%, 40%);
+}
+
+.even-color, .even-color + .collapsible-content {
+    background-color: white;
+}
+
+.collapsible-content {
+    display: none;
+}
+
+.collapsible-row, .collapsible-content {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+.name-container {
+    display: flex;
+    justify-content: center; /* Centers horizontally in the flex container */
+    width: 100vw; /* Use the full viewport width */
+    height: 100vh; /* Use the full viewport height for vertical centering */
+    font-weight: bold;
+    text-align: center;
+    position: absolute; /* Position it over any other content */
+    top: 0;
+    left: 0;
+    font-size: larger;
+}
+
+.address-container {
+    display: flex;
+    justify-content: center; /* Centers horizontally in the flex container */
+    width: 100vw; /* Use the full viewport width */
+    height: 100vh; /* Use the full viewport height for vertical centering */
+    font-weight: bold;
+    text-align: center;
+    position: absolute; /* Position it over any other content */
+    top: 0;
+    left: 0;
+}
